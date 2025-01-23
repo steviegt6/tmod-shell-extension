@@ -7,6 +7,7 @@ using SharpShell.SharpPropertySheet;
 
 namespace Tomat.TMOD.ShellExtension;
 
+[Guid("cb413e02-43a2-4714-8cb3-100a93f0db0a")]
 [ComVisible(true)]
 [COMServerAssociation(AssociationType.ClassOfExtension, ".tmod")]
 public sealed partial class TmodPropertySheet : SharpPropertySheet

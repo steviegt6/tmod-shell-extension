@@ -1,26 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net472</TargetFramework>
+        <TargetFramework>net9.0-windows</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
+        <EnableComHosting>true</EnableComHosting>
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>shell-test.snk</AssemblyOriginatorKeyFile>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="PolySharp" Version="1.15.0">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
         <PackageReference Include="SharpShell" Version="2.7.2"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="TmodPropertyPage.cs">
-        <SubType>UserControl</SubType>
-      </Compile>
+        <Compile Update="TmodPropertyPage.cs">
+            <SubType>UserControl</SubType>
+        </Compile>
     </ItemGroup>
 
 </Project>

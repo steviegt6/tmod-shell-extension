@@ -1,3 +1,4 @@
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 
@@ -8,6 +9,7 @@ using Tomat.TMOD.ShellExtension.Util;
 
 namespace Tomat.TMOD.ShellExtension;
 
+[Guid("a0479a35-52a2-4b8f-aa40-bbadd0a2ca7b")]
 [ComVisible(true)]
 [COMServerAssociation(AssociationType.ClassOfExtension, ".tmod")]
 public sealed class TmodIconHandler : SharpIconHandler
