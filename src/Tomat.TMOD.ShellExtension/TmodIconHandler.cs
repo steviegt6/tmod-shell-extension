@@ -17,7 +17,7 @@ public sealed class TmodIconHandler : SharpIconHandler
         var file    = SimpleTmodReader.ReadFromFile(SelectedItemPath);
         var iconSet = IconSet.FromTmod(file);
 
-        var preferred = smallIcon ? (iconSet.SmallIcon, iconSet.LargeIcon) : (iconSet.LargeIcon, iconSet.SmallIcon);
+        var preferred = (smallIcon || iconSize < 32) ? (iconSet.SmallIcon, iconSet.LargeIcon) : (iconSet.LargeIcon, iconSet.SmallIcon);
         return preferred.Item1 ?? preferred.Item2 ?? null!;
     }
 }
