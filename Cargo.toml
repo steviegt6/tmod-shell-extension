@@ -7,3 +7,4 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
+windows = { version = "0.52", features = ["implement", "Win32_System_Com", "Win32_Foundation"] }
